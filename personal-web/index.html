@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H@MiiD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <header class="header">
+        <h1 class="logo">H@MiiD</h1>
+        <div class="side-nav">
+            <ul>
+                <li class="list" id="home-side" ><a  onclick="changColor(this)" class="link">Home</a></li>
+                <li class="list" id="about-side"><a  onclick="changColor(this)" class="link">About</a></li>
+                <li class="list" id="portfolio-side"><a onclick="changColor(this)" class="link">Portofolio</a></li>
+                <li class="list" id="contact-side"><a  onclick="changColor(this)" class="link">Contact</a></li>
+            </ul>
+        </div>
+            <ul class="main-list">
+                <span id="wrapper"></span>
+                <li onclick="wrapper(this.id)" class="list" id="home-list" ><a  onclick="changColor(this)" class="link">Home</a></li>
+                <li onclick="wrapper(this.id)" class="list" id="about-list"><a  onclick="changColor(this)" class="link">About</a></li>
+                <li onclick="wrapper(this.id)" class="list" id="portfolio-list"><a onclick="changColor(this)" class="link">Portofolio</a></li>
+                <li onclick="wrapper(this.id)" class="list" id="contact-list"><a  onclick="changColor(this)" class="link">Contact</a></li>
+            </ul>
+            <div class="toggle-btn">
+                <span id="toggle-btn"><img id="sun-moon" src="./assets/icons/sun/sun-solid-24.png" alt="sun-moon"></span>
+            </div>
+            <div class="menu" onclick="menu()">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+            </div>
+            </div>
+        </header>
+
+    <main>
+        
+        <section class="section section1" id="home">
+            <h2></h2>
+            <div class="bubble-container">
+                <div class="bubbels"></div>
+            </div>
+        </section>
+        <section class="section section2" id="about">
+            <h2>About Me</h2>
+            <div class="bubble-container">
+                <div class="bubbels"></div>
+            </div>
+        </section>
+        
+        <section class="section section3" id="portfolio">
+            <h2>Portfolio</h2>            
+            <div class="bubble-container">
+                <div class="bubbels"></div>
+            </div>
+        </section>
+        
+        <section class="section section4" id="contact">
+            <h2>Contact</h2>
+            <div class="bubble-container">
+                <div class="bubbels"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 H@MiiD. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
